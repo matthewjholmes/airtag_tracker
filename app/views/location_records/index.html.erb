@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Location records</h1>
+
+<div id="location_records">
+  <% @location_records.each do |location_record| %>
+    <%= render location_record %>
+    <p>
+      <%= link_to "Show this location record", location_record %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New location record", new_location_record_path %>

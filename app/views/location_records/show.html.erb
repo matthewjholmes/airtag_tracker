@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @location_record %>
+
+<div>
+  <%= link_to "Edit this location record", edit_location_record_path(@location_record) %> |
+  <%= link_to "Back to location records", location_records_path %>
+
+  <%= button_to "Destroy this location record", @location_record, method: :delete %>
+</div>
